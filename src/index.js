@@ -62,8 +62,48 @@ console.log(`テンプレート構文は${name}`);
 // console.log("通常は" + name);
 
 
+/** 
+ * 
+ * アロー関数
+ * 
+*/
+
+// 従来の書き方
+// function func1(str) {
+//   return str;
+// }
+　
+
+// 関数名を定数名において書ける
+const func1 = function (str) {
+  return str;
+};
+
+console.log(func1("func1です"));
 
 
+// アロー関数
+const func2 = (str) => {
+  return str;
+}
+console.log(func2("func2です"));
 
+
+// 中の式が単一式の場合、returnを省略できる
+const func3 = (str) => str;
+
+console.log(func3("func3です"));
+
+
+const func4 = (num1, num2) => {
+  return num1 + num2;
+}
+
+console.log(func4(2,3));
+// 5　が返る
+
+const func5 = (num3, num4) => num3 - num4;
+console.log(func5(5,4));
+// 1 が返る
 
 
