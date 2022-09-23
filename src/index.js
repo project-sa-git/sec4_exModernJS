@@ -55,6 +55,12 @@ val5.push("monkey");
 console.log(val5);
 
 
+// テンプレート構文
+const name = "さむ";
+console.log(`テンプレート構文は${name}`);
+// 通常 
+// console.log("通常は" + name);
+
 
 
 
