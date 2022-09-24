@@ -162,3 +162,13 @@ const newNumArr24 = numArr24.filter((num) => {
 });
 console.log(newNumArr24);
 // [2, 4]
+
+
+/**
+ * 三項演算子
+ */
+
+const num26 = 1300;
+
+const formattedNum26 = typeof num26 === 'number' ? num26.toLocaleString() : '数字を入力してください。'
+console.log(formattedNum26);
