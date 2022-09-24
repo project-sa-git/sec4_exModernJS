@@ -127,3 +127,18 @@ console.log(message3);
 const [nameAry, ageAry] = myProfileAry;
 const message4 = `名前は${nameAry}です。年齢は${ageAry}歳です。`;
 console.log(message4);
+
+
+/***
+ * デフォルト値、引数など
+ */
+// 初期値がゲスト。
+const sayHello = (name="ゲスト") => console.log(`こんにちは、${name}`);
+sayHello("さむ");
+
+
+
+
+
+
+
