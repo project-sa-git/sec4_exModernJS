@@ -56,8 +56,8 @@ console.log(val5);
 
 
 // テンプレート構文
-const name = "さむ";
-console.log(`テンプレート構文は${name}`);
+const namee = "さむ";
+console.log(`テンプレート構文は${namee}`);
 // 通常 
 // console.log("通常は" + name);
 
@@ -107,3 +107,23 @@ console.log(func5(5,4));
 // 1 が返る
 
 
+/*
+*分割代入
+*/
+const myProfile = {
+  name: "はま",
+  age: 30,
+};
+
+const {  name, age } = myProfile;
+const message2 = `名前は${name}です、年齢は${age}です。`
+console.log(message2);
+
+
+const myProfileAry = ['さむう', 34];
+const message3 =`名前は${myProfileAry[0]}です`
+console.log(message3);
+
+const [nameAry, ageAry] = myProfileAry;
+const message4 = `名前は${nameAry}です。年齢は${ageAry}歳です。`;
+console.log(message4);
